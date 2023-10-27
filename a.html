@@ -18,7 +18,7 @@ body{ padding:0 10px }
 h1,h3,h4{ margin:10px 0; }
 #video{ background:#000; display:block; }
 #snap{ width:100px; height:40px; line-height:40px; margin:10px 0;     }
-#photo{ width:320px; height:320px;  background-repeat:no-repeat; background:#000 }
+#photo{ width:1000px; height:500px;  background-repeat:no-repeat; background:#000 }
 #text{ width:320px; height:200px;  }
 </style>
 
@@ -80,7 +80,7 @@ h1,h3,h4{ margin:10px 0; }
 
 			//这个是拍照按钮的事件，  
 			document.getElementById("snap").onclick = function(){
-			context.drawImage(video, 0, 0, 320, 320);     
+			context.drawImage(video, 0, 0, 1000, 500);     
 			//获取浏览器页面的画布对象
 			var canvans = document.getElementById("canvas");
 			//以下开始编 数据   
