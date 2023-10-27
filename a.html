@@ -26,7 +26,7 @@ h1,h3,h4{ margin:10px 0; }
 
 <video id="video" width="1000" height="500"></video>       
 <button id="snap" >拍照</button>        
-<canvas id="canvas" style="display:none" width="1000" height="500"></canvas> 
+<canvas id="canvas" style="display:none" width="320" height="320"></canvas> 
 <div id="photo"></div>
 <h4>获取的base64位PNG图像</h4>
 <textarea id="text"></textarea>
@@ -80,7 +80,7 @@ h1,h3,h4{ margin:10px 0; }
 
 			//这个是拍照按钮的事件，  
 			document.getElementById("snap").onclick = function(){
-			context.drawImage(video, 0, 0, 1000, 500);     
+			context.drawImage(video, 0, 0, 320, 320);     
 			//获取浏览器页面的画布对象
 			var canvans = document.getElementById("canvas");
 			//以下开始编 数据   
